@@ -1,0 +1,12 @@
+
+<suite name="Suite12" parallel="true">
+
+  <test  name="Test123">
+    <classes>
+      <class name="testng_sun25.ImplicitWait"/>
+      <class name="day2_sun18.Element_Present"/>
+      <class name="day2_sun18.Links_All"/>
+    </classes>
+  </test> 
+  
+</suite> 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite12]" parallel="true">
+  <test name="Test12(failed)" parallel="true">
+    <classes>
+      <class name="day2_sun18.Links_All">
+        <methods>
+          <include name="links"/>
+        </methods>
+      </class> <!-- day2_sun18.Links_All -->
+    </classes>
+  </test> <!-- Test12(failed) -->
+</suite> <!-- Failed suite [Suite12] -->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite12" duration-ms="70323" started-at="2018-03-11T07:06:01Z" finished-at="2018-03-11T07:07:11Z">
+    <groups>
+    </groups>
+    <test name="Test123" duration-ms="70323" started-at="2018-03-11T07:06:01Z" finished-at="2018-03-11T07:07:11Z">
+      <class name="day2_sun18.Element_Present">
+        <test-method status="PASS" signature="ff()[pri:0, instance:day2_sun18.Element_Present@6979e8cb]" name="ff" duration-ms="10938" started-at="2018-03-11T12:36:01Z" finished-at="2018-03-11T12:36:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ff -->
+      </class> <!-- day2_sun18.Element_Present -->
+      <class name="day2_sun18.Links_All">
+        <test-method status="PASS" signature="links()[pri:0, instance:day2_sun18.Links_All@763d9750]" name="links" duration-ms="70297" started-at="2018-03-11T12:36:01Z" finished-at="2018-03-11T12:37:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- links -->
+      </class> <!-- day2_sun18.Links_All -->
+      <class name="testng_sun25.ImplicitWait">
+        <test-method status="PASS" signature="f()[pri:0, instance:testng_sun25.ImplicitWait@5d3411d]" name="f" duration-ms="17683" started-at="2018-03-11T12:36:01Z" finished-at="2018-03-11T12:36:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- testng_sun25.ImplicitWait -->
+    </test> <!-- Test123 -->
+  </suite> <!-- Suite12 -->
+</testng-results>

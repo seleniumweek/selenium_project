@@ -1,0 +1,82 @@
+'QTP Script for connecting to sql:
+
+Option Explicit
+Dim con,rs
+
+Set con=createobject("adodb.connection")
+Set rs=createobject("adodb.recordset")
+
+con.open"Driver={SQL Server};server=MySqlServer;uid=MyUserName;pwd=MyPassword;database=pubs"
+rs.open "select * from flights",con
+
+Do while not rs.eof
+
+systemutil.Run"C:\Program Files\HP\Unified Functional Testing\samples\flight\app\flight4a.exe"
+
+Dialog("Login").WinEdit("Agent Name:").Set rs.fields("agent")  
+Dialog("Login").WinEdit("Password:").Set rs.fields("pwd")
+Dialog("Login").WinButton("OK").Click  
+Window("Flight Reservation").Close
+
+rs.movenext
+Loop
+ 
+Set rs= nothing
+Set con= nothing
+
+---------------------------------------------
+'Script for connecting to oracle:
+
+Option Explicit
+Dim con,rs
+
+Set con=createobject("adodb.connection")
+Set rs=createobject("adodb.recordset")
+
+con.open "Driver={Microsoft ODBC for Oracle};Server=oracle server name; Uid=your_username;Pwd=your_password;"
+rs.open "select * from flights",con
+
+Do while not rs.eof
+
+systemutil.Run"C:\Program Files\HP\Unified Functional Testing\samples\flight\app\flight4a.exe"
+
+Dialog("Login").WinEdit("Agent Name:").Set rs.fields("agent")  
+Dialog("Login").WinEdit("Password:").Set rs.fields("pwd")
+Dialog("Login").WinButton("OK").Click  
+Window("Flight Reservation").Close
+rs.movenext
+Loop
+ 
+Set rs= nothing
+Set con= nothing
+
+
+
+-----------------------------------------------------
+'QTP Script for connecting to MS Access:
+
+Option Explicit
+Dim con,rs
+ 
+Set con=createobject("adodb.connection") 
+Set rs=createobject("adodb.recordset")
+
+con.open "Driver={Microsoft Access Driver (*.mdb)};Dbq=C:\mydatabase.mdb;Uid=Admin;Pwd=;"
+
+rs.open "select * from flights",con
+
+Do while not rs.eof
+
+systemutil.Run"C:\Program Files\HP\Unified Functional Testing\samples\flight\app\flight4a.exe"
+
+Dialog("Login").WinEdit("Agent Name:").Set rs.fields("agent")  
+Dialog("Login").WinEdit("Password:").Set rs.fields("pwd")
+Dialog("Login").WinButton("OK").Click  
+Window("Flight Reservation").Close
+
+rs.movenext
+Loop
+
+ 
+Set rs= nothing
+Set con= nothing
